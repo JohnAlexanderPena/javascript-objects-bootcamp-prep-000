@@ -1,14 +1,10 @@
-var playlist = {
-  
- 'Slowdive': 'Alison',
- 
- 'My Bloody Valentine' : 'Sometimes'
+var playlist = {artistName: "songTitle"
  
  } ;
  
  function updatePlaylist(playlist, artistName, songTitle) {
    
- playlist['Phil Ochs'] = songTitle;
+ playlist[artistName] = songTitle;
   
   return playlist; 
  
@@ -16,7 +12,7 @@ var playlist = {
  
 function removeFromPlaylist(playlist, artistName) {
 
-  delete playlist.Slowdive ;
+  delete playlist.songTitle ;
   
   return playlist; }
   
